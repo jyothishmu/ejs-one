@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ava</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>EJS - Sample Items with Images</h1>
+        <div class="row">
+            <% for (let i = 1; i < 10; i++) { %>
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-photo/cartoon-character-with-yellow-jacket-sunglasses_71767-101.jpg?t=st=1711200365~exp=1711203965~hmac=b9a7e2113ad1fc1804c91828a84acb6d781d869c2baf018a98b751168e4abb38&w=740" class="card-img-top" alt="Item <%= i %>">
+                        <div class="card-body">
+                            <h5 class="card-title">Ava <%= i %></h5>
+                            <p class="card-text">Ava is a petite, pixie-like girl with an infectious smile that lights up the room. Her big, expressive eyes shimmer with curiosity and kindness, framed by long lashes that flutter when she laughs.<%= i %></p>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    
+</body>
+</html>
